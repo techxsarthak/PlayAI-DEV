@@ -1,0 +1,64 @@
+<div align="center">
+<h1><kbd>🧩 PlayAI</kbd></h1>
+An extension for MIT App Inventor 2.<br>
+PlayAI TTS Extension to generate and play audio using PlayAI models running 10x faster on Groq. <br> <a href="https://ai2.sarthakdev.in/extensions" target="_blank">My other extensions</a> <br> Built by <a href="https://www.sarthakdev.in/" target="_blank">Sarthak Gupta
+</div>
+
+## 📝 Specifications
+* **
+📦 **Package:** com.playai
+💾 **Size:** 59.61 KB
+⚙️ **Version:** 1.0
+📱 **Minimum API Level:** 7
+📅 **Updated On:** [date=2025-05-23 timezone="Asia/Calcutta"]
+💻 **Built & documented using:** [FAST-CLI](https://community.appinventor.mit.edu/t/fast-an-efficient-way-to-build-extensions/129103?u=jewel) `v2.8.1`
+
+## <kbd>Events:</kbd>
+**PlayAI** has total 2 events.
+
+### 💛 AudioGenerated
+Triggered when audio is successfully generated. Returns the file path to the mp3 file
+
+| Parameter | Type
+| - | - |
+| filePath | text
+
+### 💛 ErrorOccurred
+Triggered when an error occurs during audio generation or playback
+
+| Parameter | Type
+| - | - |
+| errorMessage | text
+
+## <kbd>Methods:</kbd>
+**PlayAI** has total 2 methods.
+
+### 💜 GenerateAudio
+Generates TTS audio from the input text using the Groq API
+
+| Parameter | Type
+| - | - |
+| text | text
+
+### 💜 PlayTTS
+Plays the TTS audio file at the specified file path
+
+| Parameter | Type
+| - | - |
+| filePath | text
+
+## <kbd>Setters:</kbd>
+**PlayAI** has total 2 setter properties.
+
+### 💚 Voice
+Gets the current voice
+
+* Input type: `text`
+* Helper class: `PlayAIVoice`
+* Helper enums: `Arista`, `Atlas`, `Basil`, `Briggs`, `Calum`, `Celeste`, `Cheyenne`, `Chip`, `Cillian`, `Deedee`, `Fritz`, `Gail`, `Indigo`, `Mamaw`, `Mason`, `Mikail`, `Mitch`, `Quinn`, `Thunder`
+
+### 💚 ApiKey
+Sets the API key for Groq
+
+* Input type: `text`
+
